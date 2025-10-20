@@ -1,0 +1,20 @@
+[project]
+name = "mysql"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Anna Orlowska",email = "some@email.com"}
+]
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = [
+    "sqlalchemy (>=2.0.44,<3.0.0)",
+    "alembic (>=1.17.0,<2.0.0)"
+]
+
+[tool.poetry]
+packages = [{include = "mysql", from = "src"}]
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
